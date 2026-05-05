@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Carlos Gálvez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: #0f1216;
+            --accent: #00d2ff;
+            --accent-dark: #0062ff;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg); color: var(--text-main); font-family: 'Inter', sans-serif; line-height: 1.6; }
+        .wrapper { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+        header { border-left: 6px solid var(--accent-dark); padding-left: 30px; margin-bottom: 50px; }
+        .main-title { font-family: 'Urbanist', sans-serif; font-size: clamp(35px, 6vw, 70px); font-weight: 900; line-height: 1; text-transform: uppercase; }
+        .highlight { background: linear-gradient(90deg, var(--accent), var(--accent-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .sub-role { display: block; font-size: 20px; color: var(--accent); letter-spacing: 2px; font-weight: 700; margin-top: 10px; text-transform: uppercase; }
+
+        .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px; }
+        .box { background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #1e293b; }
+        .box h2 { font-family: 'Urbanist', sans-serif; font-size: 22px; color: var(--accent); margin-bottom: 15px; text-transform: uppercase; }
+
+        section { margin-bottom: 50px; }
+        .section-title { font-family: 'Urbanist', sans-serif; font-size: 28px; margin-bottom: 30px; border-bottom: 1px solid #1e293b; padding-bottom: 10px; display: flex; align-items: center; gap: 15px; }
+        .section-title i { color: var(--accent-dark); }
+
+        .timeline-item { position: relative; padding-left: 30px; border-left: 2px solid #222; margin-bottom: 40px; }
+        .timeline-item::before { content: ""; position: absolute; left: -9px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--accent-dark); border: 4px solid var(--bg); }
+        .timeline-item h3 { font-size: 20px; color: #fff; }
+        .timeline-item .meta { display: block; font-size: 14px; color: var(--accent); font-weight: 700; margin-bottom: 10px; }
+        .timeline-item ul { margin-left: 20px; color: var(--text-dim); font-size: 15px; }
+
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 25px; }
+        .skill-block { background: #0a0c10; padding: 25px; border-radius: 12px; border: 1px solid #1e293b; }
+        .skill-block h4 { font-family: 'Urbanist', sans-serif; font-size: 18px; color: #fff; margin-bottom: 15px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #333; padding-bottom: 8px; text-transform: uppercase; }
+        .skill-block h4 i { color: var(--accent); }
+        
+        .skill-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .skill-list li { font-size: 13px; color: var(--text-dim); display: flex; align-items: center; gap: 6px; }
+        .skill-list li::before { content: "•"; color: var(--accent); }
+
+        .tag-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag { background: #1a1e26; color: #cbd5e0; padding: 4px 10px; border-radius: 4px; font-size: 12px; border: 1px solid #2d3748; }
+
+        .contact-footer { background: linear-gradient(135deg, #001f4d 0%, #000 100%); padding: 40px; border-radius: 15px; text-align: center; border: 1px solid var(--accent-dark); margin-top: 40px; }
+        .contact-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
+        .contact-item { font-size: 16px; font-weight: 600; color: #fff; text-decoration: none; transition: color 0.3s; }
+        .contact-item:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <h1 class="main-title">CARLOS DANIEL <br><span class="highlight">GÁLVEZ JIMÉNEZ</span></h1>
+        <span class="sub-role">Líder y Especialista en Tecnología, Desarrollo y Control de Calidad</span>
+    </header>
+
+    <div class="intro-grid">
+        <div class="box">
+            <h2><i class="fas fa-user-shield"></i> Perfil Profesional</h2>
+            <p style="font-size: 15px;">Líder estratégico con más de 18 años de trayectoria en entornos industriales de alta exigencia, especializado en la dirección de departamentos de Tecnología, Desarrollo (I+D) y Control de Calidad. Experto en la optimización de procesos operativos mediante metodologías de mejora continua y gestión de equipos de alto rendimiento, <strong>integrando una sólida cultura de Seguridad Industrial (EHS) y prevención de riesgos para garantizar la excelencia operativa y humana.</strong></p>
+        </div>
+        <div class="box">
+            <h2><i class="fas fa-bullseye"></i> Objetivo</h2>
+            <p style="font-size: 15px;">Trabajar en una empresa estable y creciente donde pueda aplicar mis conocimientos en tecnología, calidad y <strong>gestión de salud ocupacional</strong>. Ofrezco responsabilidad, seguridad y profesionalismo, con la proactividad y compromiso que me caracterizan, priorizando la integridad del equipo de trabajo bajo el principio del amor y temor de Dios.</p>
+        </div>
+    </div>
+
+    <section id="experiencia">
+        <h2 class="section-title"><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+        
+        <div class="timeline-item">
+            <span class="meta">2015 — 2026 | AVIENT GUATEMALA S.A.</span>
+            <h3>Diseñador Senior / Gestión de Calidad, Tecnología y Desarrollo</h3>
+            <ul>
+                <li>Liderazgo en análisis de procesos y gestión de KPIs operativos al 100%.</li>
+                <li>Implementación de metodologías SMED y Lean Six Sigma para optimización de flujos.</li>
+                <li>Dirección técnica de laboratorios y cumplimiento estricto de protocolos de seguridad industrial.</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <span class="meta">2009 — 2014 | ACSA (Envasadora de Alimentos)</span>
+            <h3>Especialista en Calidad, Sanidad y Laboratorio</h3>
+            <ul>
+                <li>Control de trazabilidad e inocuidad alimentaria bajo estándares ISO, HACCP y BPM.</li>
+                <li>Gestión técnica de laboratorio y seguridad en el manejo de químicos de saneamiento.</li>
+                <li>Garantía de estándares de salud ocupacional en todos los procesos productivos.</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <span class="meta">2007 — 2009 | CID GALLUP / SOLUSERSA</span>
+            <h3>Supervisión Operativa y Gestión de Personal</h3>
+            <p style="color: var(--accent); font-weight: 700; font-size: 14px; margin-bottom: 5px;">Supervisión de Equipos y Control de Producción</p>
+            <ul>
+                <li>Supervisión de personal técnico y operativo en entornos de alta exigencia.</li>
+                <li>Mantenimiento de estándares de eficiencia y seguridad industrial en líneas de producción masiva.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="educacion">
+        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Educación</h2>
+        <div class="box" style="border-left: 4px solid var(--accent-dark);">
+            <p><strong>Universidad Galileo (FABIQ):</strong> Licenciatura en Administración de la Calidad Total y Productividad (Cierre de Pensum)</p>
+            <p><strong>Universidad Galileo (FABIQ):</strong> Técnico Universitario en Aseguramiento de la Calidad (Graduado 2023)</p>
+            <p><strong>Inst. Evangélico América Latina:</strong> Bachiller en Ciencias y Letras (2008)</p>
+            <p><strong>Centro Técnico Kinal:</strong> Perito de Dibujo Técnico y Constructivo (2007)</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2 class="section-title"><i class="fas fa-star"></i> Habilidades, Competencias y Logros</h2>
+        <div class="skills-grid">
+            
+            <div class="skill-block">
+                <h4><i class="fas fa-certificate"></i> Certificaciones & EHS</h4>
+                <div class="tag-wrap">
+                    <span class="tag" style="border-color: var(--accent); color: #fff;">Primeros Auxilios</span>
+                    <span class="tag">ISO 45001 (Seguridad)</span><span class="tag">ISO 14001 (Ambiente)</span>
+                    <span class="tag">Six Sigma Yellow Belt</span><span class="tag">Lean Six Sigma</span>
+                    <span class="tag">ISO 9001 / 22000 / 50001</span><span class="tag">HACCP / BPM / BPF</span>
+                    <span class="tag">Ciber Seguridad</span>
+                </div>
+            </div>
+
+            <div class="skill-block">
+                <h4><i class="fas fa-toolbox"></i> Herramientas</h4>
+                <div class="tag-wrap">
+                    <span class="tag">Sistema SAP</span><span class="tag">Paquetes De Office</span>
+                    <span class="tag">Electrónica & Electricidad</span><span class="tag">Mecánica</span>
+                    <span class="tag">Diseño Técnico</span><span class="tag">Uso de Montacargas</span>
+                </div>
+            </div>
+
+            <div class="skill-block">
+                <h4><i class="fas fa-award"></i> Logros</h4>
+                <ul class="skill-list" style="grid-template-columns: 1fr;">
+                    <li>Cumplimiento del 100% en KPIs y estándares de Seguridad Industrial.</li>
+                    <li>Implementación exitosa de SMED y mejora significativa de tiempos productivos.</li>
+                    <li>Gestión integral de laboratorio con enfoque en cero incidentes.</li>
+                </ul>
+            </div>
+
+            <div class="skill-block">
+                <h4><i class="fas fa-user-check"></i> Competencias</h4>
+                <ul class="skill-list">
+                    <li>Liderazgo de Equipos</li><li>Gestión de Riesgos</li>
+                    <li>Resiliencia</li><li>Toma de Decisiones</li>
+                    <li>Ética Profesional</li><li>Comunicación Asertiva</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="contact-footer">
+        <h2 style="font-family: 'Urbanist'; margin-bottom: 10px;">CARLOS DANIEL GÁLVEZ JIMÉNEZ</h2>
+        <div class="contact-grid">
+            <a href="tel:57148397" class="contact-item"><i class="fas fa-phone"></i> 5714-8397</a>
+            <a href="mailto:charlydannecdc@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> charlydannecdc@gmail.com</a>
+            <span class="contact-item"><i class="fas fa-map-marker-alt"></i> Mixco, Guatemala</span>
+            <a href="https://www.linkedin.com/in/carlos-daniel-g%C3%A1lvez-jim%C3%A9nez-412761314" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
