@@ -20,10 +20,28 @@
         body { background-color: var(--bg); color: var(--text-main); font-family: 'Inter', sans-serif; line-height: 1.6; }
         .wrapper { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
 
-        header { border-left: 6px solid var(--accent-dark); padding-left: 30px; margin-bottom: 50px; }
-        .main-title { font-family: 'Urbanist', sans-serif; font-size: clamp(35px, 6vw, 70px); font-weight: 900; line-height: 1; text-transform: uppercase; }
+        header { 
+            display: flex; 
+            align-items: center; 
+            gap: 30px; 
+            border-left: 6px solid var(--accent-dark); 
+            padding-left: 30px; 
+            margin-bottom: 50px; 
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+        }
+
+        .header-text { flex: 1; }
+        .main-title { font-family: 'Urbanist', sans-serif; font-size: clamp(30px, 5vw, 60px); font-weight: 900; line-height: 1; text-transform: uppercase; }
         .highlight { background: linear-gradient(90deg, var(--accent), var(--accent-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .sub-role { display: block; font-size: 20px; color: var(--accent); letter-spacing: 2px; font-weight: 700; margin-top: 10px; text-transform: uppercase; }
+        .sub-role { display: block; font-size: 18px; color: var(--accent); letter-spacing: 1px; font-weight: 700; margin-top: 10px; text-transform: uppercase; }
 
         .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px; }
         .box { background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #1e293b; }
@@ -55,24 +73,32 @@
         .contact-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
         .contact-item { font-size: 16px; font-weight: 600; color: #fff; text-decoration: none; transition: color 0.3s; }
         .contact-item:hover { color: var(--accent); }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; border-left: none; padding-left: 0; }
+            .intro-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
 
 <div class="wrapper">
     <header>
-        <h1 class="main-title">CARLOS DANIEL <br><span class="highlight">GÁLVEZ JIMÉNEZ</span></h1>
-        <span class="sub-role">Líder y Especialista en Tecnología, Desarrollo y Control de Calidad</span>
+        <img src="yo.png" alt="Carlos Gálvez" class="profile-img">
+        <div class="header-text">
+            <h1 class="main-title">CARLOS DANIEL <br><span class="highlight">GÁLVEZ JIMÉNEZ</span></h1>
+            <span class="sub-role">Líder y Especialista en Producción, Tecnología, Desarrollo y Control de Calidad</span>
+        </div>
     </header>
 
     <div class="intro-grid">
         <div class="box">
             <h2><i class="fas fa-user-shield"></i> Perfil Profesional</h2>
-            <p style="font-size: 15px;">Líder estratégico con más de 18 años de trayectoria en entornos industriales de alta exigencia, especializado en la dirección de departamentos de Tecnología, Desarrollo (I+D) y Control de Calidad. Experto en la optimización de procesos operativos mediante metodologías de mejora continua y gestión de equipos de alto rendimiento, <strong>integrando una sólida cultura de Seguridad Industrial (EHS) y prevención de riesgos para garantizar la excelencia operativa y humana.</strong></p>
+            <p style="font-size: 15px;">Líder estratégico con más de 18 años de trayectoria en entornos industriales de alta exigencia, especializado en la dirección y liderazgo de departamentos de Producción, Tecnología, Desarrollo (I+D) y Control de Calidad. Experto en la optimización de procesos operativos mediante metodologías de mejora continua y gestión de equipos de alto rendimiento, integrando una sólida cultura de Seguridad Industrial (EHS) y prevención de riesgos para garantizar la excelencia operativa y humana.</p>
         </div>
         <div class="box">
             <h2><i class="fas fa-bullseye"></i> Objetivo</h2>
-            <p style="font-size: 15px;">Trabajar en una empresa estable y creciente donde pueda aplicar mis conocimientos en tecnología, calidad y <strong>gestión de salud ocupacional</strong>. Ofrezco responsabilidad, seguridad y profesionalismo, con la proactividad y compromiso que me caracterizan, priorizando la integridad del equipo de trabajo bajo el principio del amor y temor de Dios.</p>
+            <p style="font-size: 15px;">Contribuir activamente al fortalecimiento y expansión de una organización líder en el sector industrial, mediante la aplicación estratégica de mis competencias y conocimientos técnicos. Mi desempeño se rige por los pilares de responsabilidad, seguridad y profesionalismo, integrando una cultura de proactividad, compromiso y altos estándares de calidad, fundamentados siempre en mis valores éticos bajo el principio del amor y temor de Dios.</p>
         </div>
     </div>
 
@@ -102,7 +128,6 @@
         <div class="timeline-item">
             <span class="meta">2007 — 2009 | CID GALLUP / SOLUSERSA</span>
             <h3>Supervisión Operativa y Gestión de Personal</h3>
-            <p style="color: var(--accent); font-weight: 700; font-size: 14px; margin-bottom: 5px;">Supervisión de Equipos y Control de Producción</p>
             <ul>
                 <li>Supervisión de personal técnico y operativo en entornos de alta exigencia.</li>
                 <li>Mantenimiento de estándares de eficiencia y seguridad industrial en líneas de producción masiva.</li>
@@ -123,7 +148,6 @@
     <section id="habilidades">
         <h2 class="section-title"><i class="fas fa-star"></i> Habilidades, Competencias y Logros</h2>
         <div class="skills-grid">
-            
             <div class="skill-block">
                 <h4><i class="fas fa-certificate"></i> Certificaciones & EHS</h4>
                 <div class="tag-wrap">
@@ -161,7 +185,6 @@
                     <li>Ética Profesional</li><li>Comunicación Asertiva</li>
                 </ul>
             </div>
-
         </div>
     </section>
 
